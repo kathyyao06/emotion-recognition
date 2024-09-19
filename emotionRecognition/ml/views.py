@@ -13,12 +13,14 @@ import io
 import cv2
 
 directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-modelPath = os.path.join(directory, 'models', 'emotionModel.h5')
+modelPath = os.path.join(directory, 'ml', 'models', 'emotionModel.h5')
 
-if not os.path.exists(modelPath):
-    print(f"Cannot find model.")
-else: 
+try:
     model = keras.models.load_model(modelPath)
+    print("Model loaded successfully")
+except Exception as e:
+    model = None
+    print(f"Error loading model: {e}")
 
 def preprocess_image(file_obj, save_path=None):
     img = Image.open(file_obj).convert('L')
