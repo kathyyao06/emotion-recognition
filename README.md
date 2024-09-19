@@ -5,6 +5,12 @@ Web application utilizing deep convolutional neural networks to classify a perso
 ## Example Image Classification 
 <img width="772" alt="image" src="https://github.com/user-attachments/assets/db4f0539-f712-4afd-aaa2-cfe6f1d6a2ad">
 
+## Commands To Run
+Backend: python3 manage.py runserver
+Frontend: npm start
+
+
+
 
 
 
