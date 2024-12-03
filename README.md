@@ -7,6 +7,7 @@ Web application utilizing deep convolutional neural networks to classify a perso
 
 ## Commands To Run
 Backend: python3 manage.py runserver
+
 Frontend: npm start
 
 
