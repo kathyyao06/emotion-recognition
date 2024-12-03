@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import EmotionRecognition from './pages/EmotionRecognition'
-import styled from 'styled-components';
+import EmotionRecognitionImage from './pages/EmotionRecognitionImage'
+import EmotionRecognitionVideo from './pages/EmotionRecognitionVideo'
 import NavBar from './components/NavBar';
 
 const App = () => {
@@ -12,7 +12,8 @@ const App = () => {
       { <NavBar /> }
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/EmotionRecognition" element={<EmotionRecognition />} />
+        <Route path="/EmotionRecognitionImage" element={<EmotionRecognitionImage />} />
+        <Route path="/EmotionRecognitionVideo" element={<EmotionRecognitionVideo />} />
       </Routes>
     </Router>
   );

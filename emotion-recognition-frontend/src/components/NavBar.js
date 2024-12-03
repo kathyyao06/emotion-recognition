@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-          Emotion Recognition Project
+          Emotion Recognition
         </NavLink>
 
         <div className="nav__menu" id="nav-menu">
@@ -18,8 +18,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/EmotionRecognition" className="nav__link">
-                Emotion Recognition
+              <NavLink to="/EmotionRecognitionImage" className="nav__link">
+                Emotion Recognition (Image)
+              </NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/EmotionRecognitionVideo" className="nav__link">
+                Emotion Recognition (Video)
               </NavLink>
             </li>
           </ul>
